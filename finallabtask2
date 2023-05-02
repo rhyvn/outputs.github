@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final task 2</title>
+</head>
+<body>
+    <script type="text/javascript" src="F2.js"></script>
+  <h1>Basketball Products Order Form</h1>
+    <form>
+      <label for="quantity">Basketball Products:</label>
+      <input type="text" id="quantity" name="quantity" value="0">
+      <button type="button" onclick="increment()">+</button>
+      <button type="button" onclick="decrement()">-</button>
+      <br>
+      <label for="shipping">Shipping and Handling Fee:</label>
+      <input type="text" id="shipping" name="shipping" value="0">
+    </form>
+    <h2>Order Summary</h2>
+    <table>
+      <tr>
+        <td>Items:</td>
+        <td id="quantity-display">0</td>
+      </tr>
+      <tr>
+        <td>Shipping and Handling:</td>
+        <td id="shipping-display">$0.00</td>
+      </tr>
+      <tr>
+        <td>Total before Tax:</td>
+        <td id="subtotal">$0.00</td>
+      </tr>
+      <tr>
+        <td>Estimated Tax (10%):</td>
+        <td id="tax">$0.00</td>
+      </tr>
+      <tr>
+        <td><Font color="#ff000">Order Total: </Font></td>
+        <td id="total">$0.00</td>
+      </tr>
+    </table>
+    <script>
+      calculateTotal();
+    </script>
+    
+</html>
